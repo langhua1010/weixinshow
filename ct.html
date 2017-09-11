@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+	</head>
+	
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">			
+			<h1 class="mui-title">慈善积分</h1>
+		</header>
+		<div><img style="width: 100%;height:55px;margin-top: 38px;;"src="img/10.jpg" alt="" /></div>
+		<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a>
+						当前积分：150
+					
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a>
+						慈善积分：15					
+					</a>
+				</li>
+				<li class="mui-table-view-cell">					
+						向灾区捐赠积分	
+						<div class="mui-content" style="background-color:#fff">
+		  
+		    <ul class="mui-table-view mui-grid-view">
+		       <li class="mui-table-view-cell mui-media mui-col-xs-12">
+		            <a href="#">
+		                <img class="mui-media-object" src="img/4.jpg">
+		                <div class="mui-media-body">向日本伸出援助之手 </div></a>
+		       
+		            
+			
+		                        <div class="mui-numbox" data-numbox-min='0' data-numbox-max='100'>
+		                         	
+					          <button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+					         <input id="test" class="mui-input-numbox" type="number" value="0" />
+					            <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+					            
+				                </div>     
+				         <div > <button style="width: 35%;"class="mui-btn mui-btn-primary">捐献</button></div>
+
+		       </li>		                              	 
+		       <li class="mui-table-view-cell mui-media mui-col-xs-12">
+		            <a href="#">
+		                <img class="mui-media-object" src="img/4.jpg">
+		                <div class="mui-media-body">向日本伸出援助之手 </div></a>
+		       
+		             
+		                        <div class="mui-numbox" data-numbox-min='0' data-numbox-max='100'>
+		                         	
+					          <button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+					         <input id="test" class="mui-input-numbox" type="number" value="0" />
+					            <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+					            
+				                </div>     
+				         <div > <button style="width: 35%;"class="mui-btn mui-btn-primary">捐献</button></div>
+
+		       </li>
+		    </ul>    
+		</div>
+				</li>	
+				
+			</ul>
+			
+			
+			
+			<div class="mui-content-padded">
+				<p><h5>兑换说明:</h5><h6>当你向灾区捐献消费积分时，会得到相对应的的慈善积分。</h6></p>
+			</div>
+		<script src="js/mui.js"></script>
+		<script>
+			mui.init();
+			document.getElementById("test").addEventListener('tap', function(event) {
+				mui.alert('当前值: ' + document.getElementById("box").value, null, "提示");
+			});
+			var testBox=document.getElementById("test");
+			testBox.addEventListener('change',function(){
+				console.log(testBox.value);
+			});
+		</script>
+	</body>
+	
+</html>

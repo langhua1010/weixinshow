@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/app.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/swiper.css">
+
+<style>
+	.mui-table-view li{}
+</style>
+	</head>
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">产品介绍</h1>
+		</header>
+	<nav class="mui-bar mui-bar-tab ">
+			<a class="mui-tab-item" href="#Popover_0">会员</a>
+			<a class="mui-tab-item" href="#Popover_1">分类</a>
+			<a class="mui-tab-item" href="#Popover_2">我的</a>
+		</nav>
+		<div class="mui-content">
+			<div class="mui-content-padded">
+		
+		<div class="mui-content" style="background-color:#fff">
+		    <h5 style="background-color:#efeff4"></h5>
+		    <ul class="mui-table-view mui-grid-view">
+		       <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="img/4.jpg">
+		                <div class="mui-media-body">价格：100</div></a></li>
+		                 <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="img/4.jpg">
+		                <div class="mui-media-body">价格：100</div></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#"><img class="mui-media-object" src="img/4.jpg">
+		                <div class="mui-media-body">价格：100</div></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="img/4.jpg">
+		                <div class="mui-media-body">价格：100</div></a></li>
+		                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="img/4.jpg">
+		                <div class="mui-media-body">价格：100</div></a></li>
+		                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="img/4.jpg">
+		                <div class="mui-media-body">价格：100</div></a></li>
+		    </ul>    
+		</div>
+			
+ 
+			</div>
+		</div>
+		<div id="Popover_0" class="mui-popover mui-bar-popover">
+			<div class="mui-popover-arrow"></div>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell"><a id="reg"href="#">注册会员</a>
+				</li>
+				<li class="mui-table-view-cell"><a id="index"href="#">绑定会员</a>
+				</li>
+				<li class="mui-table-view-cell"><a href="#"></a>
+				</li>
+			</ul>
+		</div>
+		<div id="Popover_1" class="mui-popover mui-bar-popover">
+			<div class="mui-popover-arrow"></div>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell"><a href="#">bb霜</a>
+				</li>
+				<li class="mui-table-view-cell"><a href="#">面膜</a>
+				</li>
+				<li class="mui-table-view-cell"><a href="#">日用品</a>
+				</li>
+			</ul>
+		</div>
+		<div id="Popover_2" class="mui-popover mui-bar-popover">
+			<div class="mui-popover-arrow"></div>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell"><a id="jst"href="#">积分兑换</a>
+				</li>
+				<li class="mui-table-view-cell"><a id="ct"href="#">慈善积分</a>
+				</li>
+				<li class="mui-table-view-cell"><a id="ct"href="#">我的兑换</a>
+				</li>
+				
+				
+				
+				
+			</ul>
+		</div>
+<script src="js/mui.min.js"></script>
+<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="js/fontsize.js" type="text/javascript"></script>
+<script src="js/swiper.min.js" type="text/javascript"></script>
+
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+			document.getElementById('reg').addEventListener('tap', function() {
+      //打开关于页面
+    		mui.openWindow({
+    		url: 'reg.html', 
+   			 id:'reg'
+  			});
+		});
+			document.getElementById('index').addEventListener('tap', function() {
+      //打开关于页面
+    		mui.openWindow({
+    		url: 'index.html', 
+   			 id:'index'
+  			});
+		});
+		document.getElementById('jst').addEventListener('tap', function() {
+      //打开关于页面
+    		mui.openWindow({
+    		url: 'jst.html', 
+   			 id:'jst'
+  			});
+		});
+		document.getElementById('ct').addEventListener('tap', function() {
+      //打开关于页面
+    		mui.openWindow({
+    		url: 'ct.html', 
+   			 id:'ct'
+  			});
+		});
+	</script>
+	</body>
+	
+</html>
+</html>

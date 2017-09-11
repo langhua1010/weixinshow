@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+	</head>
+	
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">			
+			<h1 class="mui-title">我的兑换</h1>
+		</header>
+		<div><img style="width: 100%;height:55px;margin-top: 38px;;"src="img/111.jpg" alt="" /></div>
+		<ul class="mui-table-view">
+				
+				<li class="mui-table-view-cell">
+					<a href=""id="jst">兑换产品</a>
+											
+				</li>
+				
+			</ul>
+			<ul class="mui-table-view"style="margin-top: 5px;">
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="img/img.jpg">
+						<div class="mui-media-body">
+							天然面膜
+							<p class='mui-ellipsis'>消费积分：100 <br />还剩：14件</p>
+						</div>
+						<div class="mui-btn mui-btn-primary">
+					已兑换
+				</div>
+					</a>
+				</li>
+				
+				</ul>
+				<div class="mui-content">
+		    <div class="mui-content-padded">
+				 <button type="button"id="add" class="mui-btn mui-btn-success mui-btn-block mui-btn-outlined">地域搜索</button>
+				</div></div>
+						<script src="js/mui.min.js"></script>
+				<script type="text/javascript">
+					document.getElementById('add').addEventListener('tap', function() {
+      //打开关于页面
+    		mui.openWindow({
+    		url: 'add.html',
+   			 id:'add'
+  			});
+		});
+			document.getElementById('jst').addEventListener('tap', function() {
+      //打开关于页面
+    		mui.openWindow({
+    		url: 'jst.html',
+   			 id:'jst'
+  			});
+		});
+				</script>
+	</body>
+	
+</html>
